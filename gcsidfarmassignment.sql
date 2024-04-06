@@ -10,7 +10,7 @@ FROM
   -- TODO: Need to implement the filter feature of delivery date between start date and end date.
 WHERE
   o.Order_status = 'confirmed'
-  AND o.Delivery_date
+  AND o.Delivery_date -- TODO: Between Start Date and End Date
 GROUP BY
   v.Vehicle_id,
   o.Product_Name;
